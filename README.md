@@ -17,4 +17,4 @@ A simple neural network architecture with convolutional layers, activation layer
 **Results:**
 Google sheet containing the experiments and Model evaluation per experiment.
 
-![K-Means with k=8](images/logo.png)
+![K-Means with k=6](ex3 visualization/kmeans.png)
