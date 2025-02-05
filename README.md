@@ -40,4 +40,5 @@ The `clustering_ex3.ipynb` notebook contains the code for running the clustering
 
 * Data visualization for each dataset and clustering result.
 * Evaluation metrics (e.g., Silhouette Score, adjusted Rand index - if ground truth labels are available).
-* Analysis and comparison of the performance
+  
+The `Clustering Experiments.pdf` file contains the experiments' visualization and evaluation.
