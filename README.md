@@ -9,7 +9,7 @@ This project was developed as part of a college assignment focusing on unsupervi
 ## Project Overview
 
 The goal of this project was to generate synthetic datasets with known underlying structures and evaluate the performance of various clustering algorithms.  
-We explored K-Means, Hierarchical Agglomerative Clustering, and DBSCAN, analyzing their effectiveness on datasets with different shapes and noise levels.
+We explored K-Means, Hierarchical Agglomerative Clustering, and DBSCAN, analyzing their performance with different hyperparameters.
 
 ## Dataset Generation
 
@@ -31,7 +31,8 @@ The script allows control over the following parameters:
 The following clustering algorithms were implemented and compared:
 
 * **K-Means:**  A centroid-based algorithm that aims to partition the data into k clusters by minimizing the within-cluster variance.  Implemented using `sklearn.cluster.KMeans`.
-* **Hierarchical Agglomerative Clustering:** A hierarchical clustering algorithm that builds a hierarchy of clusters by iteratively merging the closest clusters. Implemented using `sklearn.cluster.AgglomerativeClustering`.  Different linkage methods (ward, complete, average, single) were experimented with.
+* **Hierarchical Agglomerative Clustering:** A hierarchical clustering algorithm that builds a hierarchy of clusters by iteratively merging the closest clusters. Implemented using `sklearn.cluster.AgglomerativeClustering`.
+* Different linkage methods (ward, complete, average, single) were experimented with.
 * **DBSCAN (Density-Based Spatial Clustering of Applications with Noise):** A density-based clustering algorithm that identifies clusters based on the density of points. Implemented using `sklearn.cluster.DBSCAN`.  The `eps` and `min_samples` parameters were tuned.
 
 ## Experiments and Documentation
