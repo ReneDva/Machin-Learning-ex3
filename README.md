@@ -1,45 +1,54 @@
-# Comparative Analysis of Clustering Algorithms (K-Means, DBSCAN, Hierarchical)
-college project, open to constructive comments.
+# Clustering Algorithms Comparison (K-Means, DBSCAN, Hierarchical)
 
-# Unsupervised Learning Project: Cluster Analysis on Synthetic Data
+![Unsupervised Learning](https://img.shields.io/badge/Type-Unsupervised_Learning-ff69b4)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange)
 
-This repository contains a Python script for generating synthetic datasets with varying shapes (blobs, moons, and a ring) and applying and comparing different clustering algorithms. 
-This project was developed as part of a college assignment focusing on unsupervised learning and cluster analysis.
+Academic project comparing clustering performance on synthetic datasets.
 
-## Project Overview
+## Overview
+This project evaluates three key unsupervised learning algorithms:
+- **K-Means** (centroid-based)
+- **DBSCAN** (density-based)
+- **Hierarchical Agglomerative Clustering**
 
-The goal of this project was to generate synthetic datasets with known underlying structures and evaluate the performance of various clustering algorithms.  
-We explored K-Means, Hierarchical Agglomerative Clustering, and DBSCAN, analyzing their performance with different hyperparameters.
+[View full report](Clustering%20Experiments.pdf)
 
 ## Dataset Generation
+`generate_data.py` creates three synthetic patterns:
+1. **Gaussian Blobs**
+2. **Moon Shapes** 
+3. **Ring Distribution**
 
-The `generate_data.py` script creates synthetic datasets by combining three distinct components:
+Controllable parameters:
+- Noise level (`noise_level`)
+- Point counts (`n_blobs`, `n_moons`, `n_ring`)
 
-1. **Blobs:** Four Gaussian clusters are generated using `sklearn.datasets.make_blobs`.
-2. **Moons:** Two intertwined crescent-shaped clusters are created using `sklearn.datasets.make_moons`.
-3. **Ring:** A ring of points is generated using trigonometric functions and random noise.
+## Tested Algorithms
+### 1. K-Means
+- Implementation: `sklearn.cluster.KMeans`
+- Key param: `n_clusters`
 
-The script allows control over the following parameters:
+### 2. DBSCAN
+- Implementation: `sklearn.cluster.DBSCAN` 
+- Critical params: `eps`, `min_samples`
 
-* `noise_level`: Controls the amount of noise added to the moons and the ring.
-* `n_blobs`: Number of samples for the blobs.
-* `n_moons`: Number of samples for the moons.
-* `n_ring`: Number of samples for the ring.
+### 3. Hierarchical Clustering
+- Implementation: `sklearn.cluster.AgglomerativeClustering`
+- Tested linkages: `ward`, `complete`, `average`, `single`
 
-## Clustering Algorithms
+## Results & Findings
+Complete analysis in Jupyter Notebook:  
+[clustering_ex3.ipynb](clustering_ex3.ipynb)
 
-The following clustering algorithms were implemented and compared:
+Key insights:
+- DBSCAN excels on non-convex shapes
+- K-Means works best on spherical clusters  
+- Hierarchical performance depends on linkage method
 
-* **K-Means:**  A centroid-based algorithm that aims to partition the data into k clusters by minimizing the within-cluster variance.  Implemented using `sklearn.cluster.KMeans`.
-* **Hierarchical Agglomerative Clustering:** A hierarchical clustering algorithm that builds a hierarchy of clusters by iteratively merging the closest clusters. Implemented using `sklearn.cluster.AgglomerativeClustering`.
-* Different linkage methods (ward, complete, average, single) were experimented with.
-* **DBSCAN (Density-Based Spatial Clustering of Applications with Noise):** A density-based clustering algorithm that identifies clusters based on the density of points. Implemented using `sklearn.cluster.DBSCAN`.  The `eps` and `min_samples` parameters were tuned.
-
-## Experiments and Documentation
-
-The `clustering_ex3.ipynb` notebook contains the code for running the clustering algorithms on the generated datasets and evaluating their performance.  The notebook includes:
-
-* Data visualization for each dataset and clustering result.
-* Evaluation metrics (e.g., Silhouette Score, adjusted Rand index - if ground truth labels are available).
-  
-The `Clustering Experiments.pdf` file contains the experiments' visualization and evaluation.
+## Adding Images to GitHub (For Future Reference)
+To include visualizations later:
+1. Upload image files to your project folder
+2. Reference them using:
+```markdown
+![Description](filename.png)
