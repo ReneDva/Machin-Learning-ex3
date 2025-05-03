@@ -28,6 +28,7 @@ Controllable parameters:
 ### 1. K-Means
 - Implementation: `sklearn.cluster.KMeans`
 - Key param: `n_clusters`
+- Best result: ![Vizualization](filename.png)
 
 ### 2. DBSCAN
 - Implementation: `sklearn.cluster.DBSCAN` 
@@ -46,9 +47,3 @@ Key insights:
 - K-Means works best on spherical clusters  
 - Hierarchical performance depends on linkage method
 
-## Adding Images to GitHub (For Future Reference)
-To include visualizations later:
-1. Upload image files to your project folder
-2. Reference them using:
-```markdown
-![Description](filename.png)
