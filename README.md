@@ -1,7 +1,7 @@
-# Machin-Learning-ex3
+# Comparative Analysis of Clustering Algorithms (K-Means, DBSCAN, Hierarchical)
 college project, open to constructive comments.
 
-# Clustering Algorithm Comparison on Synthetic Datasets
+# Unsupervised Learning Project: Cluster Analysis on Synthetic Data
 
 This repository contains a Python script for generating synthetic datasets with varying shapes (blobs, moons, and a ring) and applying and comparing different clustering algorithms. 
 This project was developed as part of a college assignment focusing on unsupervised learning and cluster analysis.
