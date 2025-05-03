@@ -41,7 +41,7 @@ Controllable parameters:
 - Implementation: `sklearn.cluster.AgglomerativeClustering`
 - Tested linkages: `ward`, `complete`, `average`, `single`
 - Best result:
-- ![Vizualization](agglomerative.png)
+- ![Vizualization](agglomwrative.png)
   
 ## Results & Findings
 Complete analysis in Jupyter Notebook:  
