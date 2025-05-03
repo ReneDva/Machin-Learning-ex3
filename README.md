@@ -28,11 +28,12 @@ Controllable parameters:
 ### 1. K-Means
 - Implementation: `sklearn.cluster.KMeans`
 - Key param: `n_clusters`
-- Best result: ![Vizualization](filename.png)
+- Best result: ![Vizualization](kmeans.png)
 
 ### 2. DBSCAN
 - Implementation: `sklearn.cluster.DBSCAN` 
 - Critical params: `eps`, `min_samples`
+- Best result: ![Vizualization](dbscan.png)
 
 ### 3. Hierarchical Clustering
 - Implementation: `sklearn.cluster.AgglomerativeClustering`
