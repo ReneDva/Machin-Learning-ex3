@@ -28,15 +28,21 @@ Controllable parameters:
 ### 1. K-Means
 - Implementation: `sklearn.cluster.KMeans`
 - Key param: `n_clusters`
+- Best result:
+- ![Vizualization](kmeans.png)
 
 ### 2. DBSCAN
 - Implementation: `sklearn.cluster.DBSCAN` 
 - Critical params: `eps`, `min_samples`
+- Best result:
+- ![Vizualization](dbscan.png)
 
 ### 3. Hierarchical Clustering
 - Implementation: `sklearn.cluster.AgglomerativeClustering`
 - Tested linkages: `ward`, `complete`, `average`, `single`
-
+- Best result:
+- ![Vizualization](agglomwrative.png)
+  
 ## Results & Findings
 Complete analysis in Jupyter Notebook:  
 [clustering_ex3.ipynb](clustering_ex3.ipynb)
@@ -46,9 +52,3 @@ Key insights:
 - K-Means works best on spherical clusters  
 - Hierarchical performance depends on linkage method
 
-## Adding Images to GitHub (For Future Reference)
-To include visualizations later:
-1. Upload image files to your project folder
-2. Reference them using:
-```markdown
-![Description](filename.png)
